@@ -8,21 +8,20 @@ internal class Program
 		 CreateArray();
        
  
- 
      }
      static int[] CreateArray()
      {
-		 Console.WriteLine("enetr the length of your array");
+		 Console.WriteLine("enter the length of your array");
 		int arrayLength = Convert.ToInt32(Console.ReadLine());
 		int[] numbers = new int[arrayLength];
 		
 		 for (int i=0; i < arrayLength; i++)
 		 {
-		 	Console.WriteLine($"enter number {i+1};");
+		 	Console.WriteLine($"enter number {i+1}:");
 			numbers[i] = Convert.ToInt32(Console.ReadLine());
 		 }
 		 
-		 Console.WriteLine("your array length");
+		 Console.WriteLine("your array length:");
 		 foreach (int number in numbers)
 		 {
 		 	Console.WriteLine(number);
@@ -33,6 +32,7 @@ internal class Program
      {
  			
 		 Console.WriteLine("Enter what search you want to do: Linear Search, Binary Search, Bubble Sort, Merge Sort,");
+		 string option = Console.ReadLine();
 		 
      }
      static void BubbleSort(int[] a)
